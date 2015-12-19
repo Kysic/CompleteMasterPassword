@@ -12,7 +12,7 @@
         and then call the program by a command like 'masterPassword=[ThePassword] firefox'.
         Thus you don't have to type the master password on firefox or thunderbird opening.
     </em:description>
-    <em:homepageURL>https://github.com/kysic</em:homepageURL>
+    <em:homepageURL>https://github.com/Kysic/CompleteMasterPassword</em:homepageURL>
 
     <!-- Fennec -->
     <em:targetApplication>
