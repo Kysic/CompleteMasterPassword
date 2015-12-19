@@ -22,5 +22,5 @@ Because of this functioning, you may see a blink on the application startup at t
 
 Recommendations : 
 - Do not used without a tool to store your master password ciphered and lock by another password or credentials.
-- This extension is a compromised between security and ease of use. I supposed to be safer to have this extension installed and a master password than no master password. But it's certainly most secure to have a master password without this extension or better, not to store any password in firefox or thunderbird.
+- This extension is a compromised between security and ease of use. It supposed to be safer to have this extension installed and a master password than no master password. But it's certainly more secure to have a master password without this extension or better, not to store any password in firefox or thunderbird.
 - Use a randomly generetad masterPassword, or at least not the same as for your personnal email account by example.
