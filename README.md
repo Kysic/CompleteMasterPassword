@@ -1,6 +1,8 @@
 # CompleteMasterPassword
 Mozilla extension to automatically complete master password at application startup.
 
+Mozilla repository URL : https://addons.mozilla.org/en-US/firefox/addon/complete-master-password/
+
 This extension is not self-sufficient and can lead to security problem.
 
 I create it for personnal use on firefox and thunderbird, and in conjonction of a script which get my master password
@@ -16,7 +18,7 @@ when I start Firefox or Thunderbird.
 
 The principle is very basic (and not optimized), the extension detect the window asking for the password and submit it automatically with the environnement variable "masterPassword" if it's present.
 The environnement variable is then overwrite to avoid simple user to use "show password" fonctionnality (it's not a robust hack,
-but it can be usefull if you just let your computer 30 seconds out of sight without locking.
+but it can be usefull if you just let your computer 30 seconds out of sight without locking it).
 
 Because of this functioning, you may see a blink on the application startup at the moment the password is automatically submited.
 
