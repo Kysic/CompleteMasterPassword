@@ -1,0 +1,5 @@
+overlay	chrome://global/content/commonDialog.xul	chrome://cmp/content/overlay.xul
+
+content	cmp	content/
+locale	cmp	en-US	locale/en-US/
+locale	cmp	fr	locale/fr/
