@@ -6,8 +6,7 @@
 
 // To see errors msgs :
 // javascript.options.showInConsole = true
-function validePassword()
-{
+function validatePassword() {
     try {
         // Form submission
         document.documentElement.getButton("accept").click();
@@ -16,33 +15,29 @@ function validePassword()
         var envService = Components.classes["@mozilla.org/process/environment;1"].getService(Components.interfaces.nsIEnvironment);
         envService.set('masterPassword', '');
     } catch (e) {
-        Components.utils.reportError("CompleteMasterPassword.validePassword() : " + e);
+        Components.utils.reportError("CompleteMasterPassword.validatePassword() : " + e);
     }
 }
 
-function modifiePassword()
-{
-    try
-    {
+function modifyPassword() {
+    try {
         // Check windows title
         if ( document.getElementById("info.body").textContent.indexOf("mot de passe principal") >= 0 
-            || document.getElementById("info.body").textContent.indexOf("the master password") >= 0)
-        {
+                || document.getElementById("info.body").textContent.indexOf("the master password") >= 0 ) {
             // Get environment variable "masterPassword"
             var passwordProp = 'masterPassword';
             var envService = Components.classes["@mozilla.org/process/environment;1"].getService(Components.interfaces.nsIEnvironment);
-            if ( envService.exists(passwordProp) && envService.get(passwordProp) != "" )
-            {  
+            if ( envService.exists(passwordProp) && envService.get(passwordProp) != "" ) {  
                 // Complete password field with environment variable
                 document.getElementById("password1Textbox").value=envService.get(passwordProp);
-                setTimeout('validePassword()', 100);
+                setTimeout('validatePassword()', 100);
             }
         }
     }
-    catch (e)
-    {
-        Components.utils.reportError("CompleteMasterPassword.modifiePassword() : " + e);
+    catch (e) {
+        Components.utils.reportError("CompleteMasterPassword.modifyPassword() : " + e);
     }
 }
-document.getElementById("info.body").addEventListener('DOMNodeInserted', modifiePassword, false);
+
+document.getElementById("info.body").addEventListener('DOMNodeInserted', modifyPassword, false);
 

@@ -1,14 +1,13 @@
 # CompleteMasterPassword
 Mozilla extension to automatically complete master password at application startup.
 
-Mozilla repository URL : https://addons.mozilla.org/en-US/firefox/addon/complete-master-password/
+Mozilla repository URL : https://addons.mozilla.org/addon/complete-master-password/
 
 This extension is not self-sufficient and can lead to security problem.
 
 I create it for personnal use on firefox and thunderbird, and in conjonction of a script which get my master password
 from a secure storage (gnome-keyring) which is unlocked when I open my gnome session
-(see https://github.com/mvhaen/node-xkeychain/blob/master/platforms/gkeyring.py for more information on how to extract a password
-from gnome-keyring).
+(see https://github.com/kparal/gkeyring for more information on how to extract a password from gnome-keyring).
 
 Then the script launch the mozilla program with a command like :
     masterPassword=[The password] firefox
