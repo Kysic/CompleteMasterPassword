@@ -12,7 +12,7 @@ from a secure storage (gnome-keyring) which is unlocked when I open my gnome ses
 Then the script launch the mozilla program with a command like :
     masterPassword=[The password] firefox
 
-Thus my password are supposed to be secure when my computer is shutdown and I have to re-enter my password
+Thus my password are supposed to be secure when my computer is shutdown and I haven't to re-enter my password
 when I start Firefox or Thunderbird.
 
 The principle is very basic (and not optimized), the extension detect the window asking for the password and submit it automatically with the environnement variable "masterPassword" if it's present.
